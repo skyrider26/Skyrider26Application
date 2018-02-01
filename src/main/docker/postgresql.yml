@@ -1,0 +1,11 @@
+version: '2'
+services:
+    skyrider26application-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/Skyrider26Application/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=Skyrider26Application
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
