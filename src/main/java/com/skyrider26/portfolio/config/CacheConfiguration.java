@@ -44,6 +44,7 @@ public class CacheConfiguration {
             cm.createCache(com.skyrider26.portfolio.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.skyrider26.portfolio.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(com.skyrider26.portfolio.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(com.skyrider26.portfolio.domain.Project.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

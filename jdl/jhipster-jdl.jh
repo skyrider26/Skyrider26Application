@@ -1,0 +1,7 @@
+entity Project {
+	title String,
+    jobTitle String,
+    detail String,
+    startDate Instant,
+    endDate Instant,
+}

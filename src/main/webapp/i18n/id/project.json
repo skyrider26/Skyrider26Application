@@ -1,0 +1,27 @@
+
+{
+    "skyrider26ApplicationApp": {
+        "project" : {
+            "home": {
+                "title": "Projects",
+                "createLabel": "Buat Project baru",
+                "createOrEditLabel": "Buat atau edit Project",
+                "search": "Cari Project"
+            },
+            "created": "Project dengan id {{ param }} telah dibuat",
+            "updated": "Project dengan id {{ param }} telah diperbaharui",
+            "deleted": "Project dengan id {{ param }} telah dihapus",
+            "delete": {
+                "question": "Apakah anda yakin ingin menghapus Project {{ id }}?"
+            },
+            "detail": {
+                "title": "Project"
+            },
+            "title": "Title",
+            "jobTitle": "Job Title",
+            "detail": "Detail",
+            "startDate": "Start Date",
+            "endDate": "End Date"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+<div *ngIf="project">
+    <h2><span jhiTranslate="skyrider26ApplicationApp.project.detail.title">Project</span> {{project.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="skyrider26ApplicationApp.project.title">Title</span></dt>
+        <dd>
+            <span>{{project.title}}</span>
+        </dd>
+        <dt><span jhiTranslate="skyrider26ApplicationApp.project.jobTitle">Job Title</span></dt>
+        <dd>
+            <span>{{project.jobTitle}}</span>
+        </dd>
+        <dt><span jhiTranslate="skyrider26ApplicationApp.project.detail">Detail</span></dt>
+        <dd>
+            <span>{{project.detail}}</span>
+        </dd>
+        <dt><span jhiTranslate="skyrider26ApplicationApp.project.startDate">Start Date</span></dt>
+        <dd>
+            <span>{{project.startDate | date:'medium'}}</span>
+        </dd>
+        <dt><span jhiTranslate="skyrider26ApplicationApp.project.endDate">End Date</span></dt>
+        <dd>
+            <span>{{project.endDate | date:'medium'}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'project/'+ project.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>
